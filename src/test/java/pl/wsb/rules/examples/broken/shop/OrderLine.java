@@ -12,5 +12,6 @@ public class OrderLine {
     @GeneratedValue
     private Long id;
 
+    @SuppressWarnings("unused")
     private Integer quantity;
 }

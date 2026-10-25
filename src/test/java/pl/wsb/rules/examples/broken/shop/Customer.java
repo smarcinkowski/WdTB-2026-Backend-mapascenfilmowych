@@ -12,5 +12,6 @@ public class Customer {
     @GeneratedValue
     private Long id;
 
+    @SuppressWarnings("unused")
     private float discount;
 }

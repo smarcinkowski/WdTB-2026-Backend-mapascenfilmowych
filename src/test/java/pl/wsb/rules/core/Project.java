@@ -113,6 +113,7 @@ public final class Project {
      * Klasa z {@code @SpringBootApplication}, wyszukana skanerem Springa (bez ArchUnit, żeby LAB 01
      * działał tylko na Spring Boot).
      */
+    @SuppressWarnings("null")
     public static synchronized Class<?> applicationClass() {
         if (applicationClass == null) {
             var scanner = new ClassPathScanningCandidateComponentProvider(false);

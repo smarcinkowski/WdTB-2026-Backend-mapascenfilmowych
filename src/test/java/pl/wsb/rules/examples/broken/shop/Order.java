@@ -28,6 +28,7 @@ public class Order {
     @Enumerated
     private Status status;
 
+    @SuppressWarnings("unused")
     private double total;
 
     @OneToMany

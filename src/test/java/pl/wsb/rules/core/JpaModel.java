@@ -79,6 +79,7 @@ public final class JpaModel {
     }
 
     /** Pola instancji klasy (bez statycznych), posortowane po nazwie. */
+    @SuppressWarnings("null")
     public static List<JavaField> fields(JavaClass javaClass) {
         return javaClass.getFields().stream()
                 .filter(f -> !f.getModifiers().contains(JavaModifier.STATIC))
